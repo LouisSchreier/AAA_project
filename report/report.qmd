@@ -1,0 +1,48 @@
+---
+title: "Data-Driven Fleet Operations: Demand Analytics and Smart Charging for Urban Ride-Hailing in Chicago" # Give your report a title
+course: "Advanced Analytics and Applications" # Specify the course name
+team: "06" # Specify your team number
+author:
+  - name: Louis Schreier
+    student-id: "7381065"
+  - name: Daniel Schumacher
+    student-id: "7409287"
+  - name: Timo Ercole
+    student-id: "7408459"
+contact: lschreie@smail.uni-koeln.de # Specified one contact for the project
+supervisor: "Univ.-Prof. Dr. Wolfgang Ketter"
+co-supervisor: "Janik Muires" # TA of the course is the co-supervisor
+date: 2026-07-26 # Date of submission
+---
+
+<!-- List of figures on its own page, after a break from the table of contents. -->
+{{< pagebreak >}}
+
+\listoffigures
+
+<!-- While you could use \clearpage or \newpage, this is the recommended way to insert a page break in Quarto as it translates to the native page break command for the output format you are using (e.g., \clearpage for PDF, <div style="page-break-after: always;"></div> for HTML). -->
+{{< pagebreak >}}
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+{{< include sections/01-introduction.qmd >}}
+
+{{< include sections/02-data-description.qmd >}}
+
+{{< include sections/03-data-preparation.qmd >}}
+
+{{< include sections/04-descriptive-analytics.qmd >}}
+
+{{< include sections/05-analytics.qmd >}}
+
+{{< include sections/06-conclusions.qmd >}}
+
+{{< pagebreak >}}
+
+\appendix
+\part*{Appendix}
+\addcontentsline{toc}{part}{Appendix}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+
+{{< include sections/07-appendix.qmd >}}
